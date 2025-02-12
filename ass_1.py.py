@@ -1,7 +1,9 @@
 #ex1
 age=input("Enter your age: ")
-
-
+if age<=8:
+    print("The ticket price is $5.")
+else:
+    print("The ticket price is $15.")
 
 
 #ex2
