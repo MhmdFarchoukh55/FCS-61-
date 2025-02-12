@@ -24,3 +24,8 @@ if username=="admin":
         print("Access denied")
 else:
     print("Access denied")
+#2emethode
+if username=="admin" and password=="1234":
+    print("Access granted")
+else:
+    print("Access denied")
