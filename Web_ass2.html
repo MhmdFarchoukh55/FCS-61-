@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    input {
+        padding: 8px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 8px 12px;
+        margin-left: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    ul {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+</style>
+</head>
+
+<body>
+    <h2>Grocery</h2>
+    <input id="itemInput" placeholder="Enter an item">
+    <button onclick="addItem()" id="c">Add new item</button>
+    <button onclick="removeItem()" id ="c1">Remove last item</button>
+    <button onclick="Finish()">Finish</button>
+
+    <ul id="groceryList"></ul>
+
+
+</body>
+<script>
+    function addItem(){
+        newIteam = document.getElementById("itemInput").value
+        x= document.createElement("li");
+        x.innerHTML=newIteam;
+        document.getElementById("groceryList").appendChild(x);
+        document.getElementById("itemInput").value=" ";
+    }
+    function removeItem(){
+        let x= document.getElementById("itemInput").value.trim();
+        if(x ==" "){
+        let y=document.getElementById("groceryList");
+        y.removeChild(y.lastElementChild);
+    }else{
+        listitem=document.getElementsByTagName("li");
+        console.log(listitem);
+        let yu=document.getElementById("groceryList");
+        console.log(yu)
+        for(let i =0;i<listitem.length ; i++){
+            if(listitem[i].textContent.trim()==x){
+                yu.removeChild(listitem[i]);
+                break;
+            }
+        }
+        document.getElementById("itemInput").value= " ";
+    }
+}
+    function Finish(){
+        let inputItem=document.querySelector("#itemInput");
+        inputItem.style.display="none";
+        let inputItem1=document.querySelector("#c");
+        inputItem1.style.display="none";
+        let inputItem2=document.querySelector("#c1");
+        inputItem2.style.display="none";
+    }
+
+</script>
+</html>
