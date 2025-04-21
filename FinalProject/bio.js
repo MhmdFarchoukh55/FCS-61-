@@ -34,6 +34,6 @@ function checkAnswerBio() {
     localStorage.setItem("quizResult", JSON.stringify(quizResult));
     console.log("Saved quiz result:", quizResult);
 
-    window.location.href = "FinalProject.html"; 
+    window.location.href = "Home.html"; 
 
 }
