@@ -12,7 +12,7 @@ function Clik_on() {
         }));
 
         window.location.href = "Home.html";
-    }else if(x=="admin@quiz.com" && users[x].password =="admin123"){
+    }if(x=="admin@quiz.com" && y =="admin123"){
         window.location.href = "AdminResult.html"; 
 
     } else {
