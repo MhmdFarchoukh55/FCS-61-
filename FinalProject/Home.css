@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div{
+
+    height: 300px;
+    width: 300px ;
+    margin-top: 70px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#quiz1{  
+    background-color: #e0c3fc;
+}
+#quiz2{ 
+    background-color: #d6aafc;
+}
+#quiz3{
+    
+    background-color: #cc91fb;
+}
+#quiz4{
+    background-color: #c278fb;
+}
+h1 ,h3{
+    padding: 0;
+    text-align: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+h3{
+    font-size: 24px;
+}
+svg{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+h2{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+h2,ul li{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    color: black; 
+}
+button{
+    margin-left: 40%;
+    padding: 8px  15px 8px 15px;
+    background-color: #9b4bb7;
+    color: white;
+    border-radius: 5px;
+    margin-top: 70px;
+    border: none;
+}
+button:hover{
+    background: black;
+    cursor: pointer;
+
+}
+.material-symbols-outlined{
+    margin-left: 100px;
+    margin-top: 15px;
+    font-size: 80px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
