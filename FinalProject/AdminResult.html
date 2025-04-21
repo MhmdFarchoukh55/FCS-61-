@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <h2 id="resultTitle"></h2>
+    <p id="userInfo"></p>
+    <p id="quizScore"></p>
+
+    <script>
+        const result = JSON.parse(localStorage.getItem("quizResult"));
+
+        if (result) {
+            document.getElementById("resultTitle").innerText = "Quiz Result";
+            document.getElementById("userInfo").innerText = `(${result.email})`;
+            document.getElementById("quizScore").innerText = `Score: ${result.score} / ${result.total}`;
+        } else {
+            document.getElementById("resultTitle").innerText = "No result found ";
+        }
+    </script>
+</body>
+</html>

@@ -1,14 +1,19 @@
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-function checkAnswer() {
+console.log("Current User Object:", currentUser);
+function checkAnswerBio() {
     let score = 0;
 
+    if (!currentUser) {
+        alert("You must be logged in to take the quiz!");
+        window.location.href = "FinalProject.html"; 
+    }
+
     const correctAnswers = {
-        "34": "34",
-        "Triangle": "Triangle",
-        "36": "36", 
-        "40 ": "40",
-        "5 ": "5"
+        "Oxygen": "Oxygen",
+        "Nucleus": "Nucleus",
+        "Plasma": "Plasma", 
+        "Saturn ": "Saturn",
+        "Gravity": "Gravity"
     };
 
     for (let questionName in correctAnswers) {
@@ -27,4 +32,5 @@ function checkAnswer() {
     };
 
     localStorage.setItem("quizResult", JSON.stringify(quizResult));
-    console.log("Saved quiz result:", quizResult);}
+    console.log("Saved quiz result:", quizResult);
+}

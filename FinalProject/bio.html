@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathematics</title>
     <link rel="stylesheet" href="bio.css">
+    <script src="bio.js"></script>
 
 </head>
 <body>
@@ -14,30 +15,30 @@
         <div>
         <p>1-What do humans need to breathe?</p>
         <div id="question1" >
-            <input type="radio" name="Oxygen"><label>Carbon dioxide</label>
-            <input type="radio"name="Oxygen"><label>Oxygen</label>
-            <input type="radio"name="Oxygen"><label>Hydrogen</label>
-            <input type="radio"name="Oxygen"><label>Helium</label>
+            <input type="radio" name="Oxygen" value="Carbon dioxide"><label>Carbon dioxide</label>
+            <input type="radio"name="Oxygen" value="Oxygen"><label>Oxygen</label>
+            <input type="radio"name="Oxygen" value="Hydrogen"><label>Hydrogen</label>
+            <input type="radio"name="Oxygen" value="Helium"><label>Helium</label>
         </div>
     </div>
 <br>
     <div>
         <p>2-What part of the cell contains genetic material (DNA)?</p>
         <div id="question2" >
-            <input type="radio" name="Nucleus"><label>Cytoplasm</label>
-            <input type="radio"name="Nucleus"><label>Nucleus</label>
-            <input type="radio"name="Nucleus"><label>Cell wall</label>
-            <input type="radio"name="Nucleus"><label>Mitochondria</label>
+            <input type="radio" name="Nucleus" value="Cytoplasm"><label>Cytoplasm</label>
+            <input type="radio"name="Nucleus" value="Nucleus"><label>Nucleus</label>
+            <input type="radio"name="Nucleus" value="Cell wall"><label>Cell wall</label>
+            <input type="radio"name="Nucleus" value="Mitochondria"><label>Mitochondria</label>
         </div>
     </div>
 <br>
     <div>
         <p>3-Which blood cells help fight infection?</p>
         <div id="question3" >
-            <input type="radio" name="Plasma"><label>Red blood cells</label>
-            <input type="radio"name="Plasma"><label>Platelets</label>
-            <input type="radio"name="Plasma"><label>White blood cells</label>
-            <input type="radio"name="Plasma"><label>Plasma</label>
+            <input type="radio" name="Plasma" value="Red blood cells"><label>Red blood cells</label>
+            <input type="radio"name="Plasma" value="Platelets"><label>Platelets</label>
+            <input type="radio"name="Plasma" value="White blood cells"><label>White blood cells</label>
+            <input type="radio"name="Plasma" value="Plasma"><label>Plasma</label>
         </div>
     </div>
 
@@ -45,10 +46,10 @@
     <div>
         <p>4-Which planet is known for having rings?</p>
         <div id="question4" >
-            <input type="radio" name="Saturn "><label>Mars</label>
-            <input type="radio"name="Saturn "><label>Jupiter</label>
-            <input type="radio"name="Saturn "><label>Saturn</label>
-            <input type="radio"name="Saturn "><label>Neptune</label>
+            <input type="radio" name="Saturn " value="Mars"><label>Mars</label>
+            <input type="radio"name="Saturn "  value="Jupiter"><label>Jupiter</label>
+            <input type="radio"name="Saturn " value="Saturn"><label>Saturn</label>
+            <input type="radio"name="Saturn " value="Neptune"><label>Neptune</label>
         </div>
     </div>
 
@@ -56,14 +57,16 @@
     <div>
         <p>5-What force keeps us on the ground?</p>
         <div id="question5" >
-            <input type="radio" name="Gravity "><label>Magnetism</label>
-            <input type="radio"name="Gravity "><label>Electricity</label>
-            <input type="radio"name="Gravity "><label> Friction</label>
-            <input type="radio"name="Gravity "><label>Gravity</label>
+            <input type="radio" name="Gravity " value="Magnetism"><label>Magnetism</label>
+            <input type="radio"name="Gravity " value="Electricity"><label>Electricity</label>
+            <input type="radio"name="Gravity " value="Friction"><label> Friction</label>
+            <input type="radio"name="Gravity " value="Gravity"><label>Gravity</label>
         </div>
     </div>
     </head>
-    <button><h3>submit</h3></button>
+    <h2 id="h2"></h2>
+
+    <button onclick="checkAnswerBio()"><h3>submit</h3></button>
 
 </body>
 </html>
